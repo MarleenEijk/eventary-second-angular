@@ -1,0 +1,21 @@
+<div class="company-container">
+  <h2>Bedrijven</h2>
+  <form (ngSubmit)="addCompany()" class="company-form">
+    <input
+      type="text"
+      [(ngModel)]="newCompanyName"
+      name="companyName"
+      placeholder="Voer bedrijfsnaam in"
+      required
+    />
+    <button type="submit">Voeg bedrijf toe</button>
+  </form>
+  <div *ngIf="loading" class="loading">laden...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <ul class="company-list">
+    <li *ngFor="let company of companies">
+      <span class="company-id">{{ company.id }}</span>
+      <span class="company-name">{{ company.name }}</span>
+    </li>
+  </ul>
+</div>

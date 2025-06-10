@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.company-container {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.company-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 32px 24px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 24px;
+}
+
+.company-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.company-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #bfc9d1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.company-form button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.company-form button:hover {
+  background: #1565c0;
+}
+
+.loading {
+  text-align: center;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.error {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.company-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.company-id {
+  color: #1976d2;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+}
